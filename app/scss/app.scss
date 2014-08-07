@@ -6,7 +6,7 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #334;
 $href-color: green;
-$side-color: #FAFAD2;
+$side-color: #F5F5F5;
 $list-color: #FFA500;
 $def-color: #E0FFFF;
 $bg-color: #FDF5E6;
@@ -26,8 +26,12 @@ aside {
   background-color: $side-color;
 }
 
+body {
+  color: $side-color;
+}
+
 img {
-  max-width: 10px;
+  max-width: 50%;
   height: auto;
 }
 
