@@ -9,6 +9,14 @@ app.use(express.static(__dirname + '/dist'));
 
 var server = http.createServer(app);
 
-server.listen(process.env.PORT, function () {
-  console.log('Server has started on port ' + process.env.PORT);  
+app.set('port', process.env.PORT || 3000);
+
+//var port = process.env.PORT || 3000;
+
+// server.listen(port, function () {
+//   console.log('Server has started on port ' + process.env.PORT);  
+// });
+
+server.listen(app.get('port'), function() {
+  console.log('Server has started on port ' + app.get('port'));
 });
