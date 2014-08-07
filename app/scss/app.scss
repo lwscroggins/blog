@@ -1,0 +1,49 @@
+/* ==========================================================================
+   App Stylesheet
+   app.scss
+   ========================================================================== */
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #334;
+$href-color: green;
+$side-color: #FAFAD2;
+$list-color: #FFA500;
+$def-color: #E0FFFF;
+$bg-color: #FDF5E6;
+
+
+div {
+  font: 100% $font-stack;
+  background-color: $side-color;
+}
+
+a {
+  color: $href-color;
+
+}
+
+aside {
+  background-color: $side-color;
+}
+
+img {
+  max-width: 10px;
+  height: auto;
+}
+
+
+
+/* Vendor Styles and Setting (foundation > settings)
+   ======================================================================== */
+@import "foundation";
+@import "settings";
+
+
+/* Mixins (User defined mixins)
+   ======================================================================== */
+
+
+/* Components
+   ======================================================================== */
+@import "components/base";
+
