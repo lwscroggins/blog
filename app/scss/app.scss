@@ -4,12 +4,8 @@
    ========================================================================== */
 
 $font-stack: Helvetica, sans-serif;
-$primary-color: #334;
 $href-color: green;
 $side-color: #F5F5F5;
-$list-color: #FFA500;
-$def-color: #E0FFFF;
-$bg-color: #FDF5E6;
 
 
 div {
@@ -28,12 +24,14 @@ aside {
 
 body {
   color: $side-color;
+  background: $side-color;
+  img {
+    width: 250px;
+    height: auto;
+  }
 }
 
-img {
-  max-width: 50%;
-  height: auto;
-}
+
 
 
 
